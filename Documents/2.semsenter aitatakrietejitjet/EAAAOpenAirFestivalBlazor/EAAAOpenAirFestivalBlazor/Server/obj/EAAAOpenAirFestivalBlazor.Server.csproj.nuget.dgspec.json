@@ -1,0 +1,204 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Server/EAAAOpenAirFestivalBlazor.Server.csproj": {}
+  },
+  "projects": {
+    "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Client/EAAAOpenAirFestivalBlazor.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Client/EAAAOpenAirFestivalBlazor.Client.csproj",
+        "projectName": "EAAAOpenAirFestivalBlazor.Client",
+        "projectPath": "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Client/EAAAOpenAirFestivalBlazor.Client.csproj",
+        "packagesPath": "/Users/kennyau/.nuget/packages/",
+        "outputPath": "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Client/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kennyau/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Shared/EAAAOpenAirFestivalBlazor.Shared.csproj": {
+                "projectPath": "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Shared/EAAAOpenAirFestivalBlazor.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Server/EAAAOpenAirFestivalBlazor.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Server/EAAAOpenAirFestivalBlazor.Server.csproj",
+        "projectName": "EAAAOpenAirFestivalBlazor.Server",
+        "projectPath": "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Server/EAAAOpenAirFestivalBlazor.Server.csproj",
+        "packagesPath": "/Users/kennyau/.nuget/packages/",
+        "outputPath": "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Server/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kennyau/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Client/EAAAOpenAirFestivalBlazor.Client.csproj": {
+                "projectPath": "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Client/EAAAOpenAirFestivalBlazor.Client.csproj"
+              },
+              "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Shared/EAAAOpenAirFestivalBlazor.Shared.csproj": {
+                "projectPath": "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Shared/EAAAOpenAirFestivalBlazor.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Shared/EAAAOpenAirFestivalBlazor.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Shared/EAAAOpenAirFestivalBlazor.Shared.csproj",
+        "projectName": "EAAAOpenAirFestivalBlazor.Shared",
+        "projectPath": "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Shared/EAAAOpenAirFestivalBlazor.Shared.csproj",
+        "packagesPath": "/Users/kennyau/.nuget/packages/",
+        "outputPath": "/Users/kennyau/Documents/2.semsenter aitatakrietejitjet/EAAAOpenAirFestivalBlazor/EAAAOpenAirFestivalBlazor/Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kennyau/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
