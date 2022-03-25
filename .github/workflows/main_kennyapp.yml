@@ -27,7 +27,7 @@ jobs:
           dbcs: ${{ secrets.DBCS }}
         run: |
           dotnet tool install --global dotnet-ef
-          cd server
+          cd /3sem/MiniProjektBlazorTemplate/blazor-web-api-template/server
           dotnet tool restore
           dotnet ef database update
           
