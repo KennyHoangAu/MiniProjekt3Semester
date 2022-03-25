@@ -19,9 +19,18 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 'v6.0'
+          dotnet-version: '6.0.x'
           include-prerelease: true
-
+          
+      - name: Update database
+        env: 
+          dbcs: ${{ secrets.DBCS }}
+        run: |
+          dotnet tool install --global dotnet-ef
+          cd server
+          dotnet tool restore
+          dotnet ef database update
+          
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
@@ -51,7 +60,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'KennyApp'
+          app-name: 'FullstackAppTest'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_685689847D1D4D97932F0BA620A0EC45 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AB306FD5B35F4650978FE092774C3C39 }}
           package: .
