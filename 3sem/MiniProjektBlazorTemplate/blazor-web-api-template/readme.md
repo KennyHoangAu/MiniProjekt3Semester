@@ -26,3 +26,4 @@ Explanation of the above commands:
 - Copy database files to new folder
 - Go to program folder
 - Start the executable (TodoApi)
+# todolisttemplate
