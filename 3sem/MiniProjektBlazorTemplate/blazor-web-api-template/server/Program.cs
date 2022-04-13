@@ -83,6 +83,10 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseCors(AllowSomeStuff);
 
+app.UseRouting();
+
+app.MapFallbackToFile("index.html");
+
 // Middlware der k�rer f�r hver request. Alle svar skal have ContentType: JSON.
 app.Use(async (context, next) =>
 {
@@ -92,12 +96,12 @@ app.Use(async (context, next) =>
 
 // Endpoints i API'en --------------------------------------------
 
-app.MapGet("/", (HttpContext context, DataService service) =>
-{
-    context.Response.ContentType = "text/html;charset=utf-8";
-    return "Hejsa. Her er der intet at se. Pr�v i stedet: " + 
-            "<a href=\"/api/questions\">/api/questions</a>";
-});
+// app.MapGet("/", (HttpContext context, DataService service) =>
+// {
+//     context.Response.ContentType = "text/html;charset=utf-8";
+//     return "Hejsa. Her er der intet at se. Pr�v i stedet: " + 
+//             "<a href=\"/api/questions\">/api/questions</a>";
+// });
 
 
 // ---------------------------------------------------------------

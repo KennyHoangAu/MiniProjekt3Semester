@@ -1,7 +1,51 @@
 ﻿@page "/"
+@inject HttpClient Http
+@inject NavigationManager UriHelper
+@inject Service.ClientService Service
+@using Data;
+@using Service.ClientService Service;
 
 <PageTitle>Todo List</PageTitle>
 
 <TodoList></TodoList>
 
+@if (questionList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+        <table class="table">
+        <thead>
+            <tr>
+                <th>Questions</th>
+                <th>&nbsp; </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var question in questions)
+            {
+            <tr>
+                <td>@question. </td>
 
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code{
+    private List<QuestionData> questionList;
+    private Question questions;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        {
+            questionList = await GetQuestion();
+        }
+    }
+    protected async Task <QuestionData[]> GetQuestion()
+    {
+        return await Service.GetAllQuestions();
+    }
+}

@@ -49,10 +49,10 @@ public class DataService
     // ---------------------------------------------------------------
     // -- Questions --
 
-    public List<Question> ListQuestions() {
-		return db.Questions
+    public async Task<List<Question>> ListQuestions() {
+		return await db.Questions
             .Include(q => q.Subject)
-		    .ToList();
+		    .ToListAsync();
 	}
 
     public Question GetQuestionById(int questionId) {
